@@ -11,14 +11,12 @@ export const Modal = ({ largeImgObj, closeModal }) =>
    };
   
   useEffect(() => {
-    const handleKeyDown = e => {
-      handleCloseModal(e);
-    };
     window.addEventListener('keydown', handleCloseModal);
 
     return () => {
       window.removeEventListener('keydown', handleCloseModal);
     };
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
 return (

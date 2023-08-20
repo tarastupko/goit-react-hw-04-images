@@ -41,7 +41,10 @@ export const App = () =>
     };
 
     fetchData();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm]);
+
+
     useEffect(() => {
     const fetchMoreData = async () => {
       const response = await Services.getImages(searchTerm, currentPage);
@@ -54,6 +57,7 @@ export const App = () =>
     if (currentPage !== 1) {
       fetchMoreData();
     }
+       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentPage]);
     
     const handleSearch = newSearchTerm => {
