@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { HeaderSearchbar, Form } from './Searchbar.styled';
 import Notiflix from 'notiflix';
 import PropTypes from 'prop-types';

@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { ModalContainer, ModalLoader, Overlay, CloseButton } from './Modal.style'; 
 import PropTypes from 'prop-types';
 
